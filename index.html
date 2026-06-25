@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anvar Jamgirov — Python Backend Engineer</title>
+  <meta name="description" content="Python backend engineer with 5+ years of experience. Django, DRF, FastAPI. Builder of national-scale education platforms (.edu.uz), APIs and Telegram bots." />
+  <meta name="author" content="Anvar Jamgirov" />
+
+  <!-- Open Graph / ijtimoiy tarmoqlarda ulashganda chiroyli ko'rinadi -->
+  <meta property="og:title" content="Anvar Jamgirov — Python Backend Engineer" />
+  <meta property="og:description" content="Python backend engineer. Django, DRF, FastAPI. Education platforms, APIs and Telegram bots." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jamgirov.uz" />
+  <!-- <meta property="og:image" content="https://jamgirov.uz/assets/og-image.png" /> -->
+
+  <!-- Favicon: oddiy inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128013;</text></svg>" />
+
+  <!-- Shriftlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__logo" href="#top">AJ<span>.</span></a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <div class="hero__content">
+        <p class="hero__eyebrow">// Python Backend Engineer</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="accent">Anvar Jamgirov</span>.
+        </h1>
+        <p class="hero__lead">
+          Python backend engineer with 5+ years of experience. I build web
+          platforms, APIs and Telegram bots with Django, DRF and FastAPI —
+          including national-scale education systems on the .edu.uz domain.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="assets/cv.pdf" download>
+            Download CV
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+
+        <ul class="hero__socials">
+          <li><a href="https://github.com/anvarjamgirov" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/anvar-jamgirov-%F0%9F%87%B5%F0%9F%87%B8-31947a176/" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://t.me/anvarjamgirov" aria-label="Telegram" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="mailto:anvarjamgirov@gmail.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+
+      <!-- Dekorativ kod kartochkasi -->
+      <div class="hero__card" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-card__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <pre class="code-card__body"><code><span class="tok-kw">class</span> <span class="tok-cls">Engineer</span>:
+    <span class="tok-kw">def</span> <span class="tok-fn">__init__</span>(<span class="tok-var">self</span>):
+        <span class="tok-var">self</span>.name = <span class="tok-str">"Anvar"</span>
+        <span class="tok-var">self</span>.role = <span class="tok-str">"Backend"</span>
+        <span class="tok-var">self</span>.stack = [
+            <span class="tok-str">"Django"</span>, <span class="tok-str">"DRF"</span>,
+            <span class="tok-str">"FastAPI"</span>, <span class="tok-str">"PostgreSQL"</span>,
+        ]
+
+    <span class="tok-kw">def</span> <span class="tok-fn">is_available</span>(<span class="tok-var">self</span>):
+        <span class="tok-kw">return</span> <span class="tok-bool">True</span>  <span class="tok-cmt"># open to work</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section container" id="about">
+      <h2 class="section__title"><span class="section__num">01.</span> About</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a Python backend engineer based in Tashkent with 5+ years of
+            experience, currently working freelance. I build web platforms,
+            REST APIs and Telegram bots end to end.
+          </p>
+          <p>
+            For three years I worked at the government's Center for Development
+            of Digital Education Technologies (e-edu.uz), building national-scale
+            platforms on the .edu.uz domain. Before that I built security
+            services and delivery bots at Media Solution. My main stack is
+            <strong>Django + DRF</strong> for web systems and <strong>FastAPI</strong>
+            for mobile-facing APIs.
+          </p>
+          <p>
+            I care about clean, readable code, solid PostgreSQL schemas, and
+            shipping things real people use. Open to new backend opportunities —
+            remote or on-site in Tashkent.
+          </p>
+          <p class="about__langs">
+            <strong>Languages:</strong> Uzbek (Native) · English (B2) · Russian (B2) · Turkish (A2)
+          </p>
+        </div>
+        <div class="about__facts">
+          <div class="fact"><span class="fact__num">5+</span><span class="fact__label">Years experience</span></div>
+          <div class="fact"><span class="fact__num">15+</span><span class="fact__label">Projects shipped</span></div>
+          <div class="fact"><span class="fact__num">4</span><span class="fact__label">Languages</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section container" id="skills">
+      <h2 class="section__title"><span class="section__num">02.</span> Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul>
+            <li>Django</li><li>DRF</li><li>FastAPI</li><li>Flask</li><li>REST</li><li>pyTelegramBotAPI</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Storage</h3>
+          <ul>
+            <li>PostgreSQL</li><li>SQLAlchemy</li><li>Django ORM</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>DevOps &amp; Tools</h3>
+          <ul>
+            <li>Docker</li><li>Docker-compose</li><li>Nginx</li><li>Git</li><li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section container" id="experience">
+      <h2 class="section__title"><span class="section__num">03.</span> Experience</h2>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">2025 — Present</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Freelance Python Engineer</h3>
+            <ul>
+              <li>Build backend systems, REST APIs and Telegram bots for clients end to end.</li>
+              <li>Django + DRF for web platforms, FastAPI for mobile-facing APIs.</li>
+              <li>Own deployment, PostgreSQL schema design and system integration.</li>
+            </ul>
+            <div class="tags">
+              <span>Django</span><span>DRF</span><span>FastAPI</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Nov 2021 — Dec 2024</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Software Engineer, Python Backend <span class="timeline__co">· Center for Development of Digital Education Technologies (e-edu.uz)</span></h3>
+            <ul>
+              <li>Built national education platforms on the .edu.uz domain — my.edu.uz, magistr.edu.uz, olimpiada.edu.uz, vacancy.edu.uz, stipendiya.edu.uz, litsey.edu.uz, kasb.edu.uz.</li>
+              <li>System and database design; developed core features and integrated systems through microservice logic.</li>
+              <li>Handled high request throughput at national scale.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Django</span><span>FastAPI</span><span>Flask</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Feb 2021 — Nov 2021</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Software Engineer, Python Backend <span class="timeline__co">· Media Solution LLC</span></h3>
+            <ul>
+              <li>Built securityhub.uz (@agsecuritybot) and a series of delivery Telegram bots — @wendysdelivery_bot, @wendyskzdelivery_bot, @motideliverybot and others.</li>
+              <li>Sharpened system & database design and became proficient in Telegram bot development.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Django</span><span>pyTelegramBotAPI</span><span>Vue.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Sep 2020 — Feb 2021</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Python Developer <span class="timeline__co">· Thinkland</span></h3>
+            <ul>
+              <li>Wrote backends for freelance projects and built lupa.jamgirov.uz, a tool that helped students prepare for university exams.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Django</span><span>Flask</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education">
+        <h3 class="education__title">Education</h3>
+        <div class="education__item">
+          <span class="education__date">2022</span>
+          <div>
+            <strong>B.Sc. in Software Engineering</strong>
+            <p>Tashkent University of Information Technologies (TUIT)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section container" id="projects">
+      <h2 class="section__title"><span class="section__num">04.</span> Projects</h2>
+      <div class="projects">
+
+        <!-- 1. my.edu.uz -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://my.edu.uz" aria-label="Open my.edu.uz" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">my.edu.uz — National Education Portal</h3>
+          <p class="project__desc">
+            Interactive online services for Uzbekistan's higher, secondary-special
+            and vocational education system. Built at the government's digital
+            education center, serving institutions nationwide.
+          </p>
+          <ul class="project__tags">
+            <li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
+          </ul>
+        </article>
+
+        <!-- 2. magistr.edu.uz -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://magistr.edu.uz" aria-label="Open magistr.edu.uz" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">magistr.edu.uz — Master's Admission System</h3>
+          <p class="project__desc">
+            Online application and admission system for master's degree programs
+            at Uzbekistan's higher education institutions, handling applicants
+            nationwide.
+          </p>
+          <ul class="project__tags">
+            <li>Django</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
+          </ul>
+        </article>
+
+        <!-- 3. vacancy.edu.uz -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://vacancy.edu.uz" aria-label="Open vacancy.edu.uz" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">vacancy.edu.uz — Education Jobs Platform</h3>
+          <p class="project__desc">
+            Job listing and vacancy platform for the education sector, connecting
+            institutions with candidates across the country.
+          </p>
+          <ul class="project__tags">
+            <li>Django</li><li>FastAPI</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <!-- 4. securityhub.uz -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://securityhub.uz" aria-label="Open securityhub.uz" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">SecurityHub — Digital Security Cloud</h3>
+          <p class="project__desc">
+            Cloud service for the mobile market that remotely sends security
+            notifications and can block devices when needed. Ships with a Telegram
+            bot (@agsecuritybot) for control.
+          </p>
+          <ul class="project__tags">
+            <li>Django</li><li>PostgreSQL</li><li>Vue.js</li>
+          </ul>
+        </article>
+
+        <!-- 5. olimpiada.edu.uz -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://olimpiada.edu.uz" aria-label="Open olimpiada.edu.uz" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">olimpiada.edu.uz — Science Olympiad System</h3>
+          <p class="project__desc">
+            System for organizing and running science olympiads across higher
+            education institutions nationwide — registration, scheduling and
+            results.
+          </p>
+          <ul class="project__tags">
+            <li>Django</li><li>FastAPI</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <!-- 6. Wendy's Delivery Bot -->
+        <article class="project">
+          <div class="project__top">
+            <svg class="project__folder" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="project__links">
+              <a href="https://t.me/wendysdelivery_bot" aria-label="Open Wendy's Delivery Bot" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project__title">Wendy's Delivery Bot</h3>
+          <p class="project__desc">
+            Telegram bot for food ordering and delivery — menu browsing, cart and
+            order flow. One of several delivery bots built end to end.
+          </p>
+          <ul class="project__tags">
+            <li>Python</li><li>pyTelegramBotAPI</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section container section--contact" id="contact">
+      <h2 class="section__title centered"><span class="section__num">05.</span> Get In Touch</h2>
+      <p class="contact__lead">
+        I'm currently looking for new backend opportunities. Whether you have a
+        question or just want to say hi, my inbox is always open.
+      </p>
+      <a class="btn btn--primary btn--lg" href="mailto:anvarjamgirov@gmail.com">Say Hello</a>
+
+      <ul class="contact__socials">
+        <li><a href="https://github.com/anvarjamgirov" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/anvar-jamgirov-%F0%9F%87%B5%F0%9F%87%B8-31947a176/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://t.me/anvarjamgirov" target="_blank" rel="noopener">Telegram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Designed &amp; built by Anvar Jamgirov · <span id="year"></span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

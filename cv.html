@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anvar Jamgirov — CV</title>
+  <meta name="description" content="Curriculum Vitae of Anvar Jamgirov, Python Backend Engineer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== Print-ready CV — A4, ATS-friendly ===== */
+    :root {
+      --ink: #1a1d24;
+      --muted: #545b66;
+      --accent: #0b5cad;
+      --rule: #d7dce3;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: #e9edf2; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      line-height: 1.5;
+      font-size: 10.5pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* The page sheet */
+    .sheet {
+      max-width: 800px;
+      margin: 24px auto;
+      background: var(--bg);
+      padding: 40px 48px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    /* ---- Header ---- */
+    .cv-header { border-bottom: 2px solid var(--accent); padding-bottom: 14px; margin-bottom: 18px; }
+    .cv-name { font-size: 26pt; font-weight: 700; letter-spacing: -0.5px; line-height: 1.1; }
+    .cv-role { font-size: 12.5pt; font-weight: 600; color: var(--accent); margin-top: 2px; }
+    .cv-contact {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      font-size: 9.5pt;
+      color: var(--muted);
+    }
+    .cv-contact span { white-space: nowrap; }
+    .cv-contact a { color: var(--muted); }
+
+    /* ---- Sections ---- */
+    section { margin-top: 16px; }
+    .sec-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    .summary { color: #2c313a; }
+
+    /* ---- Experience ---- */
+    .job { margin-bottom: 13px; break-inside: avoid; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .job-title { font-weight: 600; font-size: 10.5pt; }
+    .job-co { color: var(--accent); font-weight: 500; }
+    .job-date { color: var(--muted); font-size: 9pt; white-space: nowrap; }
+    .job ul { margin: 4px 0 0 16px; }
+    .job li { margin-bottom: 2px; }
+
+    /* ---- Two-column block for skills/edu/langs ---- */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .skill-row { margin-bottom: 4px; }
+    .skill-row b { display: inline-block; min-width: 84px; color: var(--ink); }
+    .skill-row span { color: #2c313a; }
+
+    .proj { margin-bottom: 7px; break-inside: avoid; }
+    .proj b { font-weight: 600; }
+    .proj .p-tech { color: var(--muted); font-size: 9pt; }
+    .proj .p-desc { color: #2c313a; }
+
+    .edu-line b { font-weight: 600; }
+    .edu-line span { color: var(--muted); }
+
+    .lang-line { color: #2c313a; }
+
+    /* ---- Print ---- */
+    @page { size: A4; margin: 14mm; }
+    @media print {
+      html, body { background: #fff; }
+      .sheet { box-shadow: none; margin: 0; max-width: none; padding: 0; }
+      a { color: var(--ink); }
+      .cv-contact a { color: var(--muted); }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+
+    <!-- ===== Header ===== -->
+    <header class="cv-header">
+      <div class="cv-name">Anvar Jamgirov</div>
+      <div class="cv-role">Python Backend Engineer</div>
+      <div class="cv-contact">
+        <span><a href="mailto:anvarjamgirov@gmail.com">anvarjamgirov@gmail.com</a></span>
+        <span>+998 99 676 31 96</span>
+        <span>Tashkent, Uzbekistan</span>
+        <span><a href="https://jamgirov.uz">jamgirov.uz</a></span>
+        <span><a href="https://github.com/anvarjamgirov">github.com/anvarjamgirov</a></span>
+        <span><a href="https://www.linkedin.com/in/anvar-jamgirov-%F0%9F%87%B5%F0%9F%87%B8-31947a176/">linkedin.com/in/anvar-jamgirov</a></span>
+      </div>
+    </header>
+
+    <!-- ===== Summary ===== -->
+    <section>
+      <div class="sec-title">Summary</div>
+      <p class="summary">
+        Python backend engineer based in Tashkent with 5+ years of experience.
+        I build web platforms, REST APIs and Telegram bots end to end, with a
+        focus on Django + DRF for web systems and FastAPI for mobile-facing
+        APIs. Experienced building national-scale education platforms on the
+        .edu.uz domain. Open to new backend opportunities — remote or on-site
+        in Tashkent.
+      </p>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section>
+      <div class="sec-title">Experience</div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Freelance Python Engineer</div>
+          <div class="job-date">2025 — Present</div>
+        </div>
+        <ul>
+          <li>Build backend systems, REST APIs and Telegram bots for clients end to end.</li>
+          <li>Django + DRF for web platforms, FastAPI for mobile-facing APIs; own deployment and PostgreSQL schema design.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Software Engineer, Python Backend <span class="job-co">· Center for Development of Digital Education Technologies (e-edu.uz)</span></div>
+          <div class="job-date">Nov 2021 — Dec 2024</div>
+        </div>
+        <ul>
+          <li>Built national education platforms on the .edu.uz domain — my.edu.uz, magistr.edu.uz, olimpiada.edu.uz, vacancy.edu.uz, stipendiya.edu.uz, litsey.edu.uz, kasb.edu.uz.</li>
+          <li>System and database design; developed core features and integrated systems through microservice logic.</li>
+          <li>Handled high request throughput at national scale.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Software Engineer, Python Backend <span class="job-co">· Media Solution LLC</span></div>
+          <div class="job-date">Feb 2021 — Nov 2021</div>
+        </div>
+        <ul>
+          <li>Built securityhub.uz (@agsecuritybot) and a series of delivery Telegram bots (@wendysdelivery_bot, @wendyskzdelivery_bot, @motideliverybot and others).</li>
+          <li>Strengthened system &amp; database design and became proficient in Telegram bot development.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Python Developer <span class="job-co">· Thinkland</span></div>
+          <div class="job-date">Sep 2020 — Feb 2021</div>
+        </div>
+        <ul>
+          <li>Wrote backends for freelance projects and built lupa.jamgirov.uz, a tool that helped students prepare for university exams.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Selected Projects ===== -->
+    <section>
+      <div class="sec-title">Selected Projects</div>
+
+      <div class="proj">
+        <b>my.edu.uz</b> — National Education Portal &nbsp;<span class="p-tech">Django · FastAPI · PostgreSQL · Docker</span>
+        <div class="p-desc">Interactive online services for the higher, secondary-special and vocational education system.</div>
+      </div>
+      <div class="proj">
+        <b>magistr.edu.uz</b> — Master's Admission System &nbsp;<span class="p-tech">Django · FastAPI · PostgreSQL</span>
+        <div class="p-desc">Online application and admission system for master's degree programs, handling applicants nationwide.</div>
+      </div>
+      <div class="proj">
+        <b>olimpiada.edu.uz</b> — Science Olympiad System &nbsp;<span class="p-tech">Django · FastAPI · PostgreSQL</span>
+        <div class="p-desc">Organizing and running science olympiads across higher education institutions — registration, scheduling, results.</div>
+      </div>
+      <div class="proj">
+        <b>SecurityHub</b> (securityhub.uz) — Digital Security Cloud &nbsp;<span class="p-tech">Django · PostgreSQL · Vue.js</span>
+        <div class="p-desc">Cloud service that remotely sends security notifications and can block devices; controlled via a Telegram bot.</div>
+      </div>
+      <div class="proj">
+        <b>Wendy's Delivery Bot</b> &nbsp;<span class="p-tech">Python · pyTelegramBotAPI · PostgreSQL</span>
+        <div class="p-desc">Telegram bot for food ordering and delivery — menu browsing, cart and order flow.</div>
+      </div>
+    </section>
+
+    <!-- ===== Skills / Education / Languages ===== -->
+    <section>
+      <div class="sec-title">Skills</div>
+      <div class="skill-row"><b>Languages</b><span>Python, SQL, JavaScript, HTML</span></div>
+      <div class="skill-row"><b>Backend</b><span>Django, DRF, FastAPI, Flask, REST, pyTelegramBotAPI</span></div>
+      <div class="skill-row"><b>Data</b><span>PostgreSQL, SQLAlchemy, Django ORM</span></div>
+      <div class="skill-row"><b>DevOps</b><span>Docker, Docker-compose, Nginx, Git, Linux</span></div>
+    </section>
+
+    <section>
+      <div class="grid-2">
+        <div>
+          <div class="sec-title">Education</div>
+          <div class="edu-line">
+            <b>B.Sc. in Software Engineering</b><br />
+            Tashkent University of Information Technologies (TUIT)<br />
+            <span>2022</span>
+          </div>
+        </div>
+        <div>
+          <div class="sec-title">Languages</div>
+          <div class="lang-line">
+            Uzbek — Native<br />
+            English — B2, Upper Intermediate<br />
+            Russian — B2, Upper Intermediate<br />
+            Turkish — A2, Elementary
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
