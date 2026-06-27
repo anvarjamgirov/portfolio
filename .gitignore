@@ -2,10 +2,11 @@
 .DS_Store
 ._*
 
-# Editor
+# Editor / local tooling
 .vscode/
 .idea/
 *.swp
+.claude/
 
 # Logs
 *.log

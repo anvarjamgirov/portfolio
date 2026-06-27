@@ -41,7 +41,7 @@
 /* ----- Reset ----- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; }
 
 body {
   font-family: var(--font-sans);
@@ -50,6 +50,8 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background var(--transition), color var(--transition);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -495,6 +497,14 @@ h1, h2, h3 { color: var(--text-strong); line-height: 1.2; }
   .about { grid-template-columns: 1fr; }
   .about__facts { grid-template-columns: repeat(3, 1fr); }
 
+  /* backdrop-filter establishes a containing block that traps the fixed
+     drawer inside the 64px header — disable it on mobile, use a solid bg */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg);
+  }
+
   .nav__toggle { display: flex; z-index: 110; }
   .nav__menu {
     position: fixed;
@@ -505,10 +515,12 @@ h1, h2, h3 { color: var(--text-strong); line-height: 1.2; }
     gap: 2rem;
     background: var(--bg-soft);
     border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px -15px rgba(0, 0, 0, 0.5);
     transform: translateX(100%);
-    transition: transform var(--transition);
+    visibility: hidden;
+    transition: transform var(--transition), visibility var(--transition);
   }
-  .nav__menu.is-open { transform: translateX(0); }
+  .nav__menu.is-open { transform: translateX(0); visibility: visible; }
   .nav__toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav__toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav__toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
